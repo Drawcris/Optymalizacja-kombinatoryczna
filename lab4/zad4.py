@@ -6,8 +6,9 @@ x = Int('x')
 y = Int('y')
 z = Int('z')
 
-# Zakresy dla szybszej pracy
+
 opt.add(x > y, y > z, z > 0)
+# Zakres dla szybszej pracy
 opt.add(x < 200, y < 200, z < 200)
 
 expressions = [x - y, x + z, x - z, y + z, y - z]
